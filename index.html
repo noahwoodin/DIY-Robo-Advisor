@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Growth Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+<h1>Portfolio Growth Comparison</h1>
+
+<p class="introduction">
+    This site demonstrates the cost difference between using Wealthsimple's robo-advisory service, which charges a 0.5%
+    management fee, and a DIY approach where you invest in the same assets using Wealthsimple's commission free trading.
+    By following a
+    DIY approach, you can save on fees and potentially achieve higher returns over time.
+    Do note that regardless of the aproach you take you will still pay approximately an additional 0.13% in MER fees
+    which are charged by the fund providers (Vanguard, BMO, etc.).
+</p>
+
+<div class="fee-comparison">
+    <h2>Fees Comparison</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Method</th>
+            <th>Fees</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Wealthsimple</td>
+            <td>0.63%</td>
+        </tr>
+        <tr>
+            <td>DIY</td>
+            <td>0.13%</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="controls-wrapper">
+    <h2>Growth Calculator with Fees Comparison</h2>
+    <div class="input-group">
+        <label for="initial-value">Initial Investment: </label>
+        <input type="number" id="initial-value" min="1000" max="50000" step="100" value="10000">
+    </div>
+    <div class="input-group">
+        <label for="annual-return">Expected Annual Return: </label>
+        <input type="number" id="annual-return" min="0" max="20" step="0.1" value="7">
+    </div>
+    <div class="input-group">
+        <label for="num-years">Number of Years: </label>
+        <input type="number" id="num-years" min="1" max="50" step="1" value="20">
+    </div>
+</div>
+
+<div class="charts-wrapper">
+    <div id="ws" class="chart-container"></div>
+    <div id="diy" class="chart-container"></div>
+</div>
+
+<div class="asset-allocation">
+    <h2>Asset Allocation</h2>
+    <p>
+        The DIY approach replicates Wealthsimple's investment strategy by investing in the same asset classes. The asset
+        allocation used in both methods is as follows:
+    </p>
+    <table>
+        <thead>
+        <tr>
+            <th>Asset</th>
+            <th>Allocation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Global equities</td>
+            <td>10.00%</td>
+        </tr>
+        <tr>
+            <td>Emerging market equities</td>
+            <td>14.00%</td>
+        </tr>
+        <tr>
+            <td>Gold</td>
+            <td>2.50%</td>
+        </tr>
+        <tr>
+            <td>International equities</td>
+            <td>20.00%</td>
+        </tr>
+        <tr>
+            <td>U.S. equities</td>
+            <td>26.00%</td>
+        </tr>
+        <tr>
+            <td>Canadian equities</td>
+            <td>10.00%</td>
+        </tr>
+        <tr>
+            <td>Canadian short-term bonds</td>
+            <td>1.00%</td>
+        </tr>
+        <tr>
+            <td>Government bonds</td>
+            <td>16.50%</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="allocation-chart">
+    <div id="donut-chart" class="chart-container" style="position: relative; max-width: 500px; margin: 0 auto;"></div>
+</div>
+
+<div class="diy-guide">
+    <h2>DIY Investment Guide</h2>
+    <p>
+        Build automated tooling and explain here
+    </p>
+</div>
+
+<script src="app.js"></script>
+
+<script src="allocation-chart.js"></script>
+
+</body>
+</html>

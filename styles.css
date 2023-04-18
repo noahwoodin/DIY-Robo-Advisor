@@ -1,0 +1,106 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F5F7FA;
+    color: #3C4858;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 2rem;
+    color: #3C4858;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 50%;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.introduction {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fee-comparison,
+.asset-allocation {
+    text-align: center;
+    padding: 20px;
+}
+
+.controls-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.controls-wrapper label {
+    color: #3C4858;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.controls-wrapper input {
+    display: inline-block;
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #B4C3D2;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-size: 1rem;
+    text-align: center;
+    color: #3C4858;
+}
+
+.diy-guide {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #E3E9EF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.charts-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #F5F7FA;
+    border-radius: 10px;
+}
